@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments :: head">
+
+</head>
+<body th:class="container">
+    <form method="post">
+        <div class="form-group">
+            <label>
+                <span th:text="${event.name}"></span>
+                <input type="checkbox" name="id"  th:value="${event.id}">
+            </label>
+
+        </div>
+        <button class="btn btn-danger"> Comfirm </button>
+    </form>
+</body>
+</html>
